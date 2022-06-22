@@ -9,6 +9,7 @@ import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import pages.ElementsPage;
 import pages.HomePage;
+import pages.TextBoxPage;
 
 import java.time.Duration;
 
@@ -20,6 +21,7 @@ public class BasePage {
     public WebDriverWait wdwait;
     public HomePage homePage;
     public ElementsPage elementsPage;
+    public TextBoxPage textBoxPage;
 
     @BeforeClass
     public void setup(){
@@ -29,6 +31,7 @@ public class BasePage {
         wdwait = new WebDriverWait(driver, Duration.ofSeconds(20));
         homePage = new HomePage(driver, wdwait);
         elementsPage = new ElementsPage(driver, wdwait);
+        textBoxPage = new TextBoxPage(driver, wdwait);
 
     }
 
