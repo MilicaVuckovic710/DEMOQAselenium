@@ -7,9 +7,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
-import pages.ElementsPage;
-import pages.HomePage;
-import pages.TextBoxPage;
+import pages.*;
 
 import java.time.Duration;
 
@@ -22,16 +20,21 @@ public class BasePage {
     public HomePage homePage;
     public ElementsPage elementsPage;
     public TextBoxPage textBoxPage;
+    public BookStoreAppPage bookStoreAppPage;
+    public LogInPage logInPage;
 
     @BeforeClass
     public void setup(){
         wdm = new ChromeDriverManager();
         wdm.setup();
         driver = new ChromeDriver();
-        wdwait = new WebDriverWait(driver, Duration.ofSeconds(20));
+        wdwait = new WebDriverWait(driver, Duration.ofSeconds(25));
         homePage = new HomePage(driver, wdwait);
         elementsPage = new ElementsPage(driver, wdwait);
         textBoxPage = new TextBoxPage(driver, wdwait);
+        bookStoreAppPage = new BookStoreAppPage(driver, wdwait);
+        logInPage = new LogInPage(driver, wdwait);
+
 
     }
 

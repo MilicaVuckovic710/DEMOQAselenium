@@ -4,13 +4,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0dc6ca48-528a-45d5-ac9a-216680cce6c2" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/pages/TextBoxPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/test/TestTextBoxPage.java" afterDir="false" />
+    <list default="true" id="0dc6ca48-528a-45d5-ac9a-216680cce6c2" name="Changes" comment="second commit">
+      <change afterPath="$PROJECT_DIR$/src/test/java/pages/BookStoreAppPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/pages/LogInPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/test/TestBookStore.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/test/TestLogIn.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/MainPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/MainPage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/base/BasePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/base/BasePage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/test/TestElements.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/test/TestElements.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/MainPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/MainPage.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/base/BasePage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/base/BasePage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/test/TestElements.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/test/TestElements.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,8 +54,8 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
   </component>
-  <component name="RunManager" selected="TestNG.TestTextBoxPage.submitPersonalInformation">
-    <configuration name="TestElements" type="TestNG" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="TestNG.TestBookStore.goToBookStoreAPI">
+    <configuration name="TestBookStore.LogIn" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="DemoQA" />
       <extension name="coverage">
         <pattern>
@@ -59,25 +64,8 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="test" />
-      <option name="MAIN_CLASS_NAME" value="test.TestElements" />
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="TestElements.goToDynamicPropertiesPage" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="DemoQA" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="test.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="test" />
-      <option name="MAIN_CLASS_NAME" value="test.TestElements" />
-      <option name="METHOD_NAME" value="goToDynamicPropertiesPage" />
+      <option name="MAIN_CLASS_NAME" value="test.TestBookStore" />
+      <option name="METHOD_NAME" value="LogIn" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -85,7 +73,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestElements.goToTextBoxPage" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="TestBookStore.goToBookStoreAPI" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="DemoQA" />
       <extension name="coverage">
         <pattern>
@@ -94,8 +82,8 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="test" />
-      <option name="MAIN_CLASS_NAME" value="test.TestElements" />
-      <option name="METHOD_NAME" value="goToTextBoxPage" />
+      <option name="MAIN_CLASS_NAME" value="test.TestBookStore" />
+      <option name="METHOD_NAME" value="goToBookStoreAPI" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -103,7 +91,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestHomePage" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="TestBookStore.goToLogIn" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="DemoQA" />
       <extension name="coverage">
         <pattern>
@@ -112,15 +100,16 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="test" />
-      <option name="MAIN_CLASS_NAME" value="test.TestHomePage" />
-      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="MAIN_CLASS_NAME" value="test.TestBookStore" />
+      <option name="METHOD_NAME" value="goToLogIn" />
+      <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestTextBoxPage.submitPersonalInformation" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="TestLogIn.logIn" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="DemoQA" />
       <extension name="coverage">
         <pattern>
@@ -129,8 +118,26 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="test" />
-      <option name="MAIN_CLASS_NAME" value="test.TestTextBoxPage" />
-      <option name="METHOD_NAME" value="submitPersonalInformation" />
+      <option name="MAIN_CLASS_NAME" value="test.TestLogIn" />
+      <option name="METHOD_NAME" value="logIn" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestLogIn.logInInvalid" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="DemoQA" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="test" />
+      <option name="MAIN_CLASS_NAME" value="test.TestLogIn" />
+      <option name="METHOD_NAME" value="logInInvalid" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -140,11 +147,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.TestTextBoxPage.submitPersonalInformation" />
-        <item itemvalue="TestNG.TestElements" />
-        <item itemvalue="TestNG.TestElements.goToTextBoxPage" />
-        <item itemvalue="TestNG.TestElements.goToDynamicPropertiesPage" />
-        <item itemvalue="TestNG.TestHomePage" />
+        <item itemvalue="TestNG.TestBookStore.goToBookStoreAPI" />
+        <item itemvalue="TestNG.TestLogIn.logInInvalid" />
+        <item itemvalue="TestNG.TestLogIn.logIn" />
+        <item itemvalue="TestNG.TestBookStore.LogIn" />
+        <item itemvalue="TestNG.TestBookStore.goToLogIn" />
       </list>
     </recent_temporary>
   </component>
@@ -157,6 +164,14 @@
       <option name="presentableId" value="Default" />
       <updated>1655740861054</updated>
     </task>
+    <task id="LOCAL-00001" summary="second commit">
+      <created>1655914166352</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1655914166353</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -169,5 +184,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="second commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="second commit" />
   </component>
 </project>

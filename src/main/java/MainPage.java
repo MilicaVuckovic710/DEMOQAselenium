@@ -24,9 +24,11 @@ public class MainPage {
         for(WebElement svg : svgs)
             System.out.println(svg);
         driver.findElement(new By.ByTagName("body")).sendKeys(Keys.PAGE_DOWN);
-        svgs.get(0).click();
-        wdwait.until(ExpectedConditions.presenceOfElementLocated(By.className("left-panel")));
-
+        svgs.get(6).click();
+       wdwait.until(ExpectedConditions.presenceOfElementLocated(By.className("left-panel")));
+        List<WebElement> items = driver.findElements(By.className("item-0"));
+        for(WebElement item : items)
+            System.out.println(item + " " + item.getText());
 
     }
 }

@@ -65,6 +65,7 @@ public class TestElements extends BasePage {
         driver.findElement(new By.ByTagName("body")).sendKeys(Keys.PAGE_DOWN);
         wdwait.until(ExpectedConditions.elementToBeClickable(elementsPage.getLinks()));
         elementsPage.getLinks().click();
+        driver.findElement(new By.ByTagName("body")).sendKeys(Keys.PAGE_DOWN);
         wdwait.until(ExpectedConditions.presenceOfElementLocated(By.id("no-content")));
         Assert.assertEquals(driver.getCurrentUrl(), "https://demoqa.com/links");
     }
@@ -92,6 +93,4 @@ public class TestElements extends BasePage {
         wdwait.until(ExpectedConditions.presenceOfElementLocated(By.id("visibleAfter")));
         Assert.assertEquals(driver.getCurrentUrl(), "https://demoqa.com/dynamic-properties");
     }
-
-
 }
