@@ -15,6 +15,7 @@ public class LogInPage {
     }
 
     public WebElement getUserNameInput(){
+
         return driver.findElement(By.id("userName"));
     }
     public WebElement getPasswordInput(){
@@ -27,5 +28,16 @@ public class LogInPage {
         return driver.findElement(By.cssSelector("#name")); //probano i sa id i classname, treba mu vremena
                                                             //da se ucita i da se skroluje
     }
+    public WebElement getName(){
+
+        return driver.findElement(By.id("userName-value"));
+    }
+
+    public WebElement getNewUserButton(){
+
+        return driver.findElement(By.id("newUser"));
+    }
+
+
 
 }

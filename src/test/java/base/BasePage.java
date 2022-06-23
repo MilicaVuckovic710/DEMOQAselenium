@@ -4,6 +4,7 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 import io.github.bonigarcia.wdm.managers.ChromeDriverManager;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
@@ -17,6 +18,7 @@ public class BasePage {
     public WebDriverManager wdm;
     public WebDriver driver;
     public WebDriverWait wdwait;
+    public Actions actions;
     public HomePage homePage;
     public ElementsPage elementsPage;
     public TextBoxPage textBoxPage;
@@ -29,6 +31,7 @@ public class BasePage {
         wdm.setup();
         driver = new ChromeDriver();
         wdwait = new WebDriverWait(driver, Duration.ofSeconds(25));
+        actions = new Actions(driver);
         homePage = new HomePage(driver, wdwait);
         elementsPage = new ElementsPage(driver, wdwait);
         textBoxPage = new TextBoxPage(driver, wdwait);

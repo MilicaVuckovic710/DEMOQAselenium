@@ -33,6 +33,21 @@ public class TestLogIn extends BasePage {
         wdwait.until(ExpectedConditions.visibilityOf(logInPage.getRedNotification()));
         Assert.assertEquals(logInPage.getRedNotification().getText(), "Invalid username or password!");
 
+    }
+    @Test
+    public void logInValid(){
+        logInPage.getUserNameInput().sendKeys("lale");
+        logInPage.getPasswordInput().sendKeys("LAKIca123&");
+        logInPage.getLoginButton().click();
+        driver.findElement(new By.ByTagName("body")).sendKeys(Keys.PAGE_DOWN);
+        wdwait.until(ExpectedConditions.visibilityOf(logInPage.getName()));
+        Assert.assertEquals(logInPage.getName().getText(), "lale");
+
+    }
+    @Test
+    public void goToRegisterPage(){
+        logInPage.getNewUserButton().click();
+        Assert.assertEquals(driver.getCurrentUrl(), "https://demoqa.com/register");
 
 
     }
